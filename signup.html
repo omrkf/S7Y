@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="S7Y">
+    <meta name="author" content="S7Y">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cairo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tajawal:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="node_modules\bootstrap-v4-rtl\dist\css\bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/styleSign.css"> <!-- Resource style -->
+    <link rel="stylesheet" href="css/demo.css"> <!-- Demo style -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>S7Y</title>
+
+
+
+</head>
+
+<body>
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark-bg-dark">
+            <a class="navbar-brand" href="HOME.html"><img src="img/s7y-logo-light.png" alt="s7y-logo"
+                    id="navbar-brand-edit"></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link-home hoooover" href="HOME.html">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link-home  hoooover" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="false" aria-expanded="false">
+                            الأندية
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item dbg-dark" href="sportgym.html">الأندية الرياضية</a>
+                            <a class="dropdown-item dbg-dark" href="healthy gym.html">الأنديةالصحية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-home hoooover" href="clubPage.html">المدربون</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-home hoooover" href="#">أخصائيين التغذية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link-home  hoooover" href="GPS.html">GPS</a>
+                    </li>
+                </ul>
+                <div class="search-boxingg">
+                    <input class="search-textrt" type="text" name=" " placeholder="ابحث ما تريد ! ">
+                    <a class="search-bttn hoooover" href="https://www.google.com.sa">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </div>
+                <hr>
+                <nav class="cd-main-nav js-main-nav">
+                    <ul class="cd-main-nav__list js-signin-modal-trigger">
+                        <!-- inser more links here -->
+                        <li><a class="cd-main-nav__item cd-main-nav__item--signup hoooover " href="signin.html"
+                                data-signin="login" id="signnn">سجل
+                                دخولك</a></li>
+                        <li><a class="cd-main-nav__item cd-main-nav__item--signup hoooover" href="signup.html"
+                                data-signin="signup" id="signnn">اشترك</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+    </div>
+
+    <section>
+        <div class="bkgrnd">
+            <form action="../a/php/Register.php"   method="POST">
+                <hr class="hhr">
+                <div id="mainArea">
+
+                    <div id="inputArea">
+
+                        <label for="fullName">
+                            <div id=arText>
+                                <p>الاسم الكامل</p>
+                            </div>
+                        </label>
+
+                        <input class="inpuut" type="text" name="Name" placeholder="Ahmad Al Ali" required>
+                    </div>
+                    <hr>
+                    <div id="inputArea">
+
+                        <label for="email">
+                            <div id=arText>
+                                <p>البريد الالكتروني</p>
+                            </div>
+                        </label>
+
+                        <input class="inpuut" type="email" name="emailAdd" required placeholder="eg. example@example.com">
+                    </div>
+                    <hr>
+                    <div id="inputArea">
+
+                        <label for="fullName">
+                            <div id=arText>
+                                <p>كلمة المرور</p>
+                            </div>
+                        </label>
+                        <input class="inpuut" type="password" name="password" required placeholder="************">
+                    </div>
+                    <hr>
+                    <div id="inputArea">
+
+                        <label for="fullName">
+                            <div id=arText>
+                                <p>تأكيد كلمة المرور</p>
+                            </div>
+                        </label>
+
+                        <input class="inpuut" type="Password" name="confirmpassword" required placeholder="************">
+                    </div>
+                    <hr>
+                    <div id="inputArea">
+
+                        <label for="fullName">
+                            <div id=arText>
+                                <p>تاريخ الميلاد</p>
+                            </div>
+                        </label>
+                        <input class="inpuut" type="date" name="dateofbirth" required id="dateofbirth">
+                    </div>
+                    <hr>
+                    <div class="aaaa">
+                        <label class="eddit">الجنس:</label>
+                        <label class="edditt">
+                            <input type="radio" class="option-input radio" name="gender" value="male">
+                            ذكر
+                        </label>
+                        <label class="edditt">
+                            <input type="radio" class="option-input radio" name="gender" value="female">
+                            أنثى
+                        </label>
+                    </div>
+                    <hr>
+                    <div class="locationn">
+                        <div class="checkbox-custom">
+                            <input class="form-check-input" type="checkbox" id="checkbox1"  onchange=" document.getElementById('submitchecked').disabled = !this.checked;">
+                            <label class="form-check-label" for="checkbox1">
+                                لقد قرأت كافة الشروط و <a href="#" class="aaa">القوانين </a>
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="suubmit">
+                        <input  id="submitchecked" class="bttn btn btn-dark" name="submit" type="submit" value="اشترك" disabled >
+                    </div>
+                </div>
+            </form>
+            <hr class="hhr">
+    </section>
+    <footer class="site-foooter">
+        <div class="contaiiner">
+            <div class="row">
+                <div class="col-xs-6 col-md-3"></div>
+                <div class="col-xs-6 col-md-3">
+                    <h6 class="content-fooooter">نبذة عن الموقع:</h6>
+                    <p class="content-foooter"> منصة لربط العملاء بالنوادي الصحية و الرياضية و الإسهام لجعل العميل هو
+                        المستفيد
+                        الأكبر</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6 class="content-fooooter">أهداف الموقع:</h6>
+                    <p class="content-foooter">-العمل على سهولة جذب العملاء- <br>
+                        -متاح لجميع الأعمار- <br>
+                        -توفير مزيد من الوعي- <br>
+                        -زيادة التواصل مع العملاء-
+                    </p>
+
+                </div>
+
+            </div>
+            <hr>
+        </div>
+        <div class="contaiiner">
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.whatsapp.com/"><i class="fa fa-whatsapp"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/?lang=ar"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a></li>
+                <li><a class="linkedin" href="https://sa.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            <p class="copyright-text">Copyright &copy; 2019 All Rights Reserved by
+                <a href="#" class="copyright-text">S7Y</a>
+            </p>
+        </div>
+    </footer>
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\propper\index.js"></script>
+    <script src="node_modules\bootstrap-v4-rtl\dist\js\bootstrap.min.js"></script>
+    <script src="js/placeholders.min.js"></script> <!-- polyfill for the HTML5 placeholder attribute -->
+    <script src="js/main.js"></script> <!-- Resource JavaScript -->
+
+</body>
+
+
+</html>
